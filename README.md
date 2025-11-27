@@ -1,42 +1,48 @@
-# Lab 4 - Deploy de Infraestrutura e API Para Aplicação de Data Science na AWS com Terraform
-<br>
-Neste Laboratório irei realizar um processo completo de automação de uma aplicação com uma API fazendo a interação entre o front-end (página web) e o back-end (modelo de Machine Learning).
-<br>
-<br>
+# Lab 4 - Deploy de Infraestrutura e API de Data Science na AWS com Terraform
 
-## Definição de Negócio e Arquiteturada Solução  
-<br>
-O objetivo principal deste Lab é desenvolver e implementar uma solução de infraestrutura na nuvem usando Terraform para hospedar uma aplicação de Data Science na AWS. Esta aplicação será focada em um modelo de Machine Learning (ML) projetado para prever se clientes vão realizar novas compras com base em seus históricos de gastos.
-<br>
-<br>
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Engenharia de Dados](https://img.shields.io/badge/Engenharia%20de%20Dados-orange?style=for-the-badge)
 
-## Especificações do Lab
+> **Resumo:** Neste Laboratório realizei a automação completa de uma aplicação composta por uma API que interage entre o front-end (web) e o back-end (modelo de Machine Learning).
 
-#### Desenvolvimento de Modelo de ML:  
-• Construir um modelo de Machine Learning que utilize dados históricos de compras de clientes para prever futuras ações de compra;
+---
 
-• Garantir a precisão e eficiência do modelo.
-<br>
-<br>
+## 🎯 Definição de Negócio e Arquitetura da Solução
 
-#### Implementação de Infraestrutura na AWS:
-• Utilizar serviços AWS para hospedar e executar a aplicação, incluindo Amazon EC2, S3 e IAM;
+O objetivo principal deste Lab é desenvolver e implementar uma infraestrutura na nuvem usando **Terraform** para hospedar uma aplicação de Data Science na **AWS**. 
 
-• Garantir segurança, escalabilidade e alta disponibilidade da infraestrutura.
-<br>
-<br>
+A aplicação foca em um modelo de **Machine Learning (ML)** projetado para prever se clientes vão realizar novas compras com base em seus históricos de gastos.
 
-#### Automatização com Terraform:
-• Empregar  Terraform  para  automatizar  a  implantação  da  infraestrutura  na  AWS, assegurando uma implementação consistente e eficiente;
+---
 
-• Documentar  o  código  Terraform  para  facilitar  a  manutenção  e  atualizações futuras.
+## 📋 Especificações do Lab
 
-#### Desenvolvimento de API:
-• Criar uma API para integrar o modelo de ML com a aplicação de front-end;
+#### 🧠 Desenvolvimento de Modelo de ML
+* Construir um modelo de Machine Learning utilizando dados históricos de compras para prever futuras ações.
+* Garantir a precisão e eficiência do modelo.
 
-• Assegurar que a API seja segura, escalável e de fácil utilização.
-<br>
-<br>
+#### ☁️ Implementação de Infraestrutura na AWS
+* Utilizar serviços AWS (**Amazon EC2, S3 e IAM**) para hospedar a aplicação.
+* Garantir segurança, escalabilidade e alta disponibilidade.
 
-## Resultados Esperados
-A conclusão bem-sucedida deste Lab resultará em uma aplicação de Data Science totalmente funcional e automatizada na AWS, capaz de fornecer insights valiosos sobre o comportamento de compra dos clientes,  apoiando assim decisões estratégicas de negócios e marketing.
+#### 🤖 Automatização com Terraform
+* Empregar **Terraform** para automatizar a implantação na AWS (IaC), assegurando consistência.
+* Documentar o código para facilitar manutenção e atualizações futuras.
+
+#### 🔌 Desenvolvimento de API
+* Criar uma API para integrar o modelo de ML com a aplicação de front-end.
+* Assegurar que a API seja segura, escalável e de fácil utilização.
+
+---
+
+## 🚀 Resultados Esperados
+
+A conclusão bem-sucedida deste Lab resulta em uma aplicação de Data Science **totalmente funcional e automatizada**, capaz de fornecer insights valiosos sobre o comportamento de compra dos clientes, apoiando decisões estratégicas de negócios e marketing.
+
+---
+
+## 📝 Autor
+
+Desenvolvido por [Thiago Vinicius](https://www.linkedin.com/in/thiagoviniciusbsantos/).
