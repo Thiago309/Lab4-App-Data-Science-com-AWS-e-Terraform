@@ -24,3 +24,9 @@ aws --version
 
 
 # ATENÇÃO: VOCÊ PRECISA TER O ANACONDA PYTHON INSTALADO LOCALMENTE PARA FAZER O DEPLOY LOCAL.
+
+
+# Para executar o scrip cria_modelo.py use o seguinte comando a baixo:
+
+1. Acesso o diretorio onde se encontra o arquivo cria_modelo.py
+2. Execute o comando: python cria_modelo.py 
