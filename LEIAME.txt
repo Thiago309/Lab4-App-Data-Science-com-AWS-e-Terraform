@@ -9,12 +9,11 @@
 docker build -t dsa-terraform-image:lab4 .
 
 
-# Execute o comando abaixo para criar o container Docker
+# Execute o comando abaixo para criar o container Docker no Linux ou wsl 2
 
 docker run -dit --name dsa-lab4 -v ./IaC:/iac dsa-terraform-image:lab4 /bin/bash
 
 NOTA: No Windows você deve substituir ./IaC pelo caminho completo da pasta, por exemplo: C:\DSA\Cap08\IaC
-
 
 # Verifique as versões do Terraform e do AWS CLI com os comandos abaixo
 
