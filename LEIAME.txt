@@ -30,3 +30,19 @@ aws --version
 
 1. Acesso o diretorio onde se encontra o arquivo cria_modelo.py
 2. Execute o comando: python cria_modelo.py 
+
+
+
+# Roteiro
+
+1. Preparar o Ambiente Python no WSL2 para execução local:
+	1- 	ir para o diretório raiz do wsl com: cd /
+	2-	sudo apt update
+	3-	sudo apt install python3-pip -y
+	4-	pip3 install pandas
+	5-	pip3 install scikit-learn
+	6-	exit
+	7-	IR PARA O DIRETORIRO ONDE ESTÁ O ARQUIVO DE API 
+	8-	python3 app.py
+
+2. 
