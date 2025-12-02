@@ -1,10 +1,9 @@
-# Instruções do Lab 4
+========================== INSTRUÇÕES LAB4 ===============================================================
 
 
-# Abra o terminal ou prompt de comando e navegue até a pasta onde você colocou os arquivos do Lab3 (não use espaço ou acento em nome de pasta)
+# Abra o terminal ou prompt de comando e navegue até a pasta onde você colocou os arquivos do Lab4 (não use espaço ou acento em nome de pasta)
 
-
-# Execute o comando abaixo para criar a imagem Docker
+# Execute o comando abaixo para criar a imagem Docker no mesmo diretorio onde está o Dockerfile
 
 docker build -t dsa-terraform-image:lab4 .
 
@@ -15,25 +14,14 @@ docker run -dit --name dsa-lab4 -v ./IaC:/iac dsa-terraform-image:lab4 /bin/bash
 
 NOTA: No Windows você deve substituir ./IaC pelo caminho completo da pasta, por exemplo: C:\DSA\Cap08\IaC
 
-# Verifique as versões do Terraform e do AWS CLI com os comandos abaixo
+# Verifique as versões do Terraform e do AWS CLI com os comandos abaixo no container docker dsa-lab4
 
 terraform version
 aws --version
 
-# Configurar as credenciais de acesso AWS CLI
-aws config 
 
+# ================================= Roteiro =========================================
 
-
-
-
-# Para executar o scrip cria_modelo.py use o seguinte comando a baixo:
-
-1. Acesso o diretorio onde se encontra o arquivo cria_modelo.py
-2. Execute o comando: python cria_modelo.py 
-
-
-# Roteiro
 
    ATENÇÃO: VOCÊ PRECISA TER O ANACONDA PYTHON INSTALADO LOCALMENTE PARA FAZER O DEPLOY LOCAL.
 
@@ -49,5 +37,13 @@ aws config
 
 2. Executar o script localmente para teste.
 
-	1-	Acesso o diretorio onde se encontra o arquivo cria_modelo.py
-	2-	Execute o comando: python cria_modelo.py 
+	1-	Acesso o diretorio onde se encontra o arquivo /IaC/dsa_ml_app/app.py
+	2-	Execute o comando: python app.py 
+
+
+3. Realizando o deploy da aplicação na AWS.
+
+	1-	Configurar as credenciais de acesso AWS CLI com o comando:
+		aws configure
+
+	2-	
