@@ -1,24 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>DSA - Lab 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA - Lab 4: Predição de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variáveis de cor para facilitar manutenção */
+        :root {
+            --primary-color: #007bff; /* Azul padrão */
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --input-border: #ccc;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result-box {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #e8f4fd;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center;">
+
+    <div class="container">
         <h1>Data Science Academy</h1>
-        <h2>Modelo de Machine Learning Para Prever Se o Cliente Fará Uma Próxima Compra</h2>
-        <h3>Digite Abaixo o Valor das Últimas 4 Compras do Cliente</h3>
+        <h2>Predição de Recompra (Lab 4)</h2>
+        
+        <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            Digite abaixo os valores das últimas 4 compras para que o modelo avalie o perfil do cliente.
+        </p>
+
         <form action="/predict" method="post">
-            <input type="text" name="feature1" placeholder="Valor Compra 1" required="required" />
-            <input type="text" name="feature2" placeholder="Valor Compra 2" required="required" />
-            <input type="text" name="feature3" placeholder="Valor Compra 3" required="required" />
-            <input type="text" name="feature4" placeholder="Valor Compra 4" required="required" />
-            <button type="submit">Prever</button>
+            
+            <div class="input-group">
+                <label for="f1">Valor da 1ª Compra (R$)</label>
+                <input type="number" id="f1" name="feature1" placeholder="Ex: 150.00" step="0.01" required>
+            </div>
+
+            <div class="input-group">
+                <label for="f2">Valor da 2ª Compra (R$)</label>
+                <input type="number" id="f2" name="feature2" placeholder="Ex: 200.50" step="0.01" required>
+            </div>
+
+            <div class="input-group">
+                <label for="f3">Valor da 3ª Compra (R$)</label>
+                <input type="number" id="f3" name="feature3" placeholder="Ex: 50.00" step="0.01" required>
+            </div>
+
+            <div class="input-group">
+                <label for="f4">Valor da 4ª Compra (R$)</label>
+                <input type="number" id="f4" name="feature4" placeholder="Ex: 300.00" step="0.01" required>
+            </div>
+
+            <button type="submit">Realizar Previsão</button>
         </form>
 
         {% if prediction_text %}
-            <h3>{{ prediction_text }}</h3>
+            <div class="result-box">
+                <h3>{{ prediction_text }}</h3>
+            </div>
         {% endif %}
+
     </div>
+
 </body>
 </html>
