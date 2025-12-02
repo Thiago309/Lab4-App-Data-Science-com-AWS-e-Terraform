@@ -1,1 +1,6 @@
 *.ipynb
+IaC/dsa_iac_deploy/.terraform/providers/registry.terraform.io/hashicorp/aws/6.23.0/linux_amd64/LICENSE.txt
+IaC/dsa_iac_deploy/.terraform.lock.hcl
+IaC/dsa_iac_deploy/.terraform/providers/registry.terraform.io/hashicorp/aws/6.23.0/linux_amd64/terraform-provider-aws_v6.23.0_x5
+IaC/dsa_iac_deploy/terraform.tfstate
+IaC/dsa_iac_deploy/terraform.tfstate.backup
