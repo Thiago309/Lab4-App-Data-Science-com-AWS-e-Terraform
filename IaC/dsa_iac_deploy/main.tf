@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "dsa_bucket_flask" {
-  bucket = "dsa-890582101704-bucket" 
+  bucket = "dsa-124645972365-bucket" 
 
   tags = {
     Name        = "DSA Bucket"
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "dsa_bucket_flask" {
 
   provisioner "local-exec" {
     when    = destroy
-    command = "aws s3 rm s3://dsa-890582101704-bucket --recursive"
+    command = "aws s3 rm s3://dsa-124645972365-bucket --recursive"
   }
 }
 
