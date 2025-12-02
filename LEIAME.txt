@@ -58,7 +58,21 @@ aws --version
 		aws s3 ls | awk '{print $NF}'
 
 	3-	No conteiner, vá até o diretório onde estão os scripts de criação terraform .tf:
-		IaC/dsa_iac_app/
+		IaC/dsa_iac_deploy/
 
-	4-	Execute o comando: 
+	4-	Iniciar o terraform execute o comando : 
 		terraform init
+
+	5-	Realizar deploy da aplicação:
+		terraform apply
+
+	6-	Para conferir, acesse o site da AWS.
+		Pesquise por EC2 -> Instancias -> Clique no ID da instância -> Conectar
+		-> selecione a opção: Conexão de instância do EC2 -> Click em conectar -> cd/ 
+		-> ls -la -> ps -ax | grep python 
+
+	7-	Verificar através do conteiner Docker.
+		aws s3 ls | awk '{print $NF}'
+
+	8- 	Destruir os serviços
+		terraform destroy
