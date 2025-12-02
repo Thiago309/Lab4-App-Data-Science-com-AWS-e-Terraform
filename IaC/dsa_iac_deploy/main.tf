@@ -37,7 +37,7 @@ resource "aws_instance" "dsa_ml_api" {
                 sudo yum install -y python3 python3-pip awscli
                 sudo pip3 install flask joblib scikit-learn numpy scipy gunicorn
                 sudo mkdir /dsa_ml_app
-                sudo aws s3 sync s3://dsa-890582101704-bucket /dsa_ml_app
+                sudo aws s3 sync s3://dsa-124645972365-bucket /dsa_ml_app
                 cd /dsa_ml_app
                 nohup gunicorn -w 4 -b 0.0.0.0:5000 app:app &
               EOF
