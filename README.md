@@ -42,21 +42,21 @@ A aplicação foca em um modelo de **Machine Learning (ML)** projetado para prev
 LAB4-APP-DATA-SCIENCE-COM-AWS-E-TERRAFORM
 ├── IaC/
 │   ├── dsa_iac_deploy/
-│   │   ├── main.tf                # Configuração principal do Terraform
-│   │   ├── outputs.tf             # Definição das saídas (outputs)
-│   │   └── upload_to_s3.sh        # Script auxiliar para upload no S3
+│   │   ├── main.tf                 # Configuração principal do Terraform
+│   │   ├── outputs.tf              # Definição das saídas (outputs)
+│   │   └── upload_to_s3.sh         # Script auxiliar para upload no S3
 │   └── dsa_ml_app/
 │       ├── templates/
-│       │   └── index.html         # Front-end da aplicação (HTML)
-│       ├── app.py                 # API / Aplicação principal
-│       ├── cria_modelo.py         # Script de treinamento do modelo ML
+│       │   └── index.html          # Front-end da aplicação (HTML)
+│       ├── app.py                  # API / Aplicação principal
+│       ├── cria_modelo.py          # Script de treinamento do modelo ML
 │       └── modelo_dsa_treinado.pkl # Arquivo do modelo serializado (Pickle)
 ├── .gitattributes
-├── .gitignore                     # Arquivos ignorados pelo Git
-├── Dockerfile                     # Configuração da imagem Docker
-├── LEIAME.txt                     # Instruções adicionais
+├── .gitignore                      # Arquivos ignorados pelo Git
+├── Dockerfile                      # Configuração da imagem Docker
+├── LEIAME.txt                      # Instruções adicionais
 ├── LICENSE
-└── README.md                      # Documentação do projeto
+└── README.md                       # Documentação do projeto
 ```
 
 ---
