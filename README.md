@@ -73,6 +73,8 @@ https://youtu.be/ZmNz3qS8zZQ
 
 ---
 
-## 📝 Autor
+## 📝 Autor 
+
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
 Desenvolvido por [Thiago Vinicius](https://www.linkedin.com/in/thiagoviniciusbsantos/).
