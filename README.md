@@ -67,6 +67,12 @@ A conclusão bem-sucedida deste Lab resulta em uma aplicação de Data Science *
 
 ---
 
+![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+
+https://youtu.be/ZmNz3qS8zZQ
+
+---
+
 ## 📝 Autor
 
 Desenvolvido por [Thiago Vinicius](https://www.linkedin.com/in/thiagoviniciusbsantos/).
