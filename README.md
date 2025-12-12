@@ -39,7 +39,7 @@ A aplicação foca em um modelo de **Machine Learning (ML)** projetado para prev
 ## 📂 Estrutura do Projeto
 
 ```bash
-LAB4-APP-DATA-SCIENCE-COM-AWS-E-TERRAFORM
+LAB4-APP-DATA-SCIENCE-COM-AWS-E-TERRAFORM/
 ├── IaC/
 │   ├── dsa_iac_deploy/
 │   │   ├── main.tf                 # Configuração principal do Terraform
